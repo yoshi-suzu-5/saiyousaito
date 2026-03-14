@@ -23,7 +23,8 @@
       "Bash(perl docs/tests/debug_http.pl)",
       "Bash(perl docs/tests/debug_http.pl 3001)",
       "Bash(perl docs/tests/run_tests.pl 3001)",
-      "Bash(grep -n \"open my $fh\" C:/Yoshiaki/git/saiyousaito/docs/tests/run_tests.pl)"
+      "Bash(grep -n \"open my $fh\" C:/Yoshiaki/git/saiyousaito/docs/tests/run_tests.pl)",
+      "Bash(grep -rn -i \"api.key\\\\|apikey\\\\|api_key\\\\|secret\\\\|password\\\\|passwd\\\\|token\\\\|credential\\\\|private.key\\\\|access.key\\\\|auth\" C:/Yoshiaki/git/saiyousaito --include=*.json --include=*.pl --include=*.js --include=*.html --include=*.css --include=*.md --include=*.csv)"
     ]
   }
 }
