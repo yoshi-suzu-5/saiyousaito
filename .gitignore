@@ -1,0 +1,20 @@
+# Claude Code の設定ファイル（ローカル環境専用・公開不要）
+.claude/settings.local.json
+.claude/worktrees/
+
+# テスト自動生成ファイル
+docs/tests/results.csv
+
+# OS・エディタ系
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Node.js（将来的に使う場合）
+node_modules/
+
+# 環境変数ファイル
+.env
+.env.*
