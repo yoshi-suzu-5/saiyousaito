@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where python:*)",
+      "Bash(where python3:*)",
+      "Bash(where node:*)",
+      "Bash(cmd.exe /c \"python --version\")",
+      "Bash(cmd.exe /c \"where python\")",
+      "Bash(cmd.exe /c \"python -V\")",
+      "Bash(where npm:*)",
+      "Bash(where py:*)",
+      "Bash(python3 -c \"print\\(''''hello''''\\)\")",
+      "Bash(echo \"exit: $?\")",
+      "Read(//usr/bin/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(netstat -ano)"
+    ]
+  }
+}
