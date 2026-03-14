@@ -1199,3 +1199,309 @@ ul {
     align-items: flex-start;
   }
 }
+
+/* ===========================
+   代表メッセージ
+   =========================== */
+
+.rep-message {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.rep-photo-wrap {
+  position: relative;
+}
+
+.rep-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-hover);
+}
+
+.rep-name-badge {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  background: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 16px rgba(0,166,160,0.3);
+}
+
+.rep-name-badge .title {
+  font-size: 0.72rem;
+  opacity: 0.85;
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.rep-name-badge .name {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.rep-text {
+  padding-top: 16px;
+}
+
+.rep-text blockquote {
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1.5;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+  padding-left: 20px;
+  border-left: 4px solid var(--primary);
+}
+
+.rep-text p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  line-height: 1.9;
+}
+
+.rep-sig {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rep-sig img {
+  height: 40px;
+  opacity: 0.6;
+  filter: grayscale(1);
+}
+
+/* ===========================
+   社員の声
+   =========================== */
+
+.voice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.voice-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.voice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.voice-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.voice-card-body {
+  padding: 24px;
+}
+
+.voice-dept {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.voice-dept.sales  { background: #FFE0D6; color: #D84315; }
+.voice-dept.it     { background: #DCEEFB; color: #1565C0; }
+.voice-dept.corp   { background: #D0F4F5; color: #00696B; }
+.voice-dept.act    { background: #EDE0F7; color: #6A1B9A; }
+
+.voice-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.voice-profile {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+
+.voice-quote {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  position: relative;
+  padding-left: 16px;
+  border-left: 3px solid var(--primary-light);
+}
+
+/* ===========================
+   職場写真（バナー）
+   =========================== */
+
+.scene-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ===========================
+   先輩社員インタビュー
+   =========================== */
+
+.interview-wrap {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.interview-photo-col {
+  text-align: center;
+}
+
+.interview-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  margin: 0 auto 16px;
+  border: 4px solid var(--primary-light);
+  box-shadow: var(--shadow);
+}
+
+.interview-person-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.interview-person-info {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.interview-qa {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.qa-item {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.qa-q {
+  background: var(--primary);
+  color: white;
+  padding: 12px 18px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.qa-q::before {
+  content: 'Q';
+  font-size: 1.1rem;
+  font-weight: 900;
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.25);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1px;
+}
+
+.qa-a {
+  background: var(--bg-light);
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.qa-a::before {
+  content: 'A';
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--primary);
+  flex-shrink: 0;
+  width: 26px;
+  text-align: center;
+}
+
+/* ===========================
+   レスポンシブ（追加分）
+   =========================== */
+
+@media (max-width: 900px) {
+  .rep-message {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .rep-photo-wrap {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .interview-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .interview-photo-col {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .interview-photo {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .voice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rep-text blockquote {
+    font-size: 1.2rem;
+  }
+}
